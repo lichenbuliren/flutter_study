@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import './custom_scroll_view.dart';
 import './demo_list.dart';
 import './random_word.dart';
+import './layout_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -44,6 +45,11 @@ class Home extends StatelessWidget {
               leading: Icon(Icons.live_tv),
               title: Text('CustomScrollView'),
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => CustomScrollViewDemo()))
+            ),
+            ListTile(
+              leading: Icon(Icons.apps),
+              title: Text('Layout Demo'),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LayoutDemo()))
             )
           ],
       )),
