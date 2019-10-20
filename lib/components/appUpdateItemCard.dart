@@ -1,5 +1,3 @@
-import 'dart:ui' as prefix0;
-
 import 'package:flutter/material.dart';
 import '../models/index.dart';
 
@@ -100,25 +98,30 @@ class _AppUpdateItemCardState extends State<AppUpdateItemCard> {
               child: Container(
                 width: 60,
                 height: 24,
-                alignment: Alignment.centerRight,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(14),
                   gradient: LinearGradient(
                     begin: Alignment.centerRight,
                     end: Alignment.centerLeft,
-                    colors: [Colors.white, Colors.white],
-                    stops: [1, 0.8],
+                    colors: [Colors.white, Colors.white70],
+                    stops: [0.7, 1],
                   )
                 ),
                 child: FlatButton(
-                  child: Text('more', textAlign: TextAlign.right, style: TextStyle(fontSize: 14.0)),
+                  child: Text('more',
+                      textAlign: TextAlign.end,
+                      style: TextStyle(fontSize: 14.0)),
                   onPressed: onTap,
+                  highlightColor: Colors.transparent,
+                  disabledColor: Colors.transparent,
+                  color: Colors.transparent,
                   padding: EdgeInsets.all(0),
-                  // materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10)),
                   textColor: Colors.blue,
                 ),
-              ),
+              )
             ),
           ],
         ),
