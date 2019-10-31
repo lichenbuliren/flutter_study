@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_study/dataFlow/dataFlow.dart';
 import './custom_scroll_view.dart';
 import './demo_list.dart';
 import './random_word.dart';
@@ -50,6 +51,11 @@ class Home extends StatelessWidget {
               leading: Icon(Icons.apps),
               title: Text('Layout Demo'),
               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => LayoutDemo()))
+            ),
+            ListTile(
+              leading: Icon(Icons.data_usage),
+              title: Text('Data flow'),
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => DataFlowDemo())),
             )
           ],
       )),
